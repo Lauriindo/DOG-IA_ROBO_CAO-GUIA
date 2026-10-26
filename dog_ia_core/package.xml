@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>dog_ia_core</name>
+  <version>0.1.0</version>
+  <description>
+    Pacote núcleo do DOG-IA (Robô Cão-Guia Urbano de Inteligência Assistiva).
+    Contém o nó valida_ambiente, que confirma a integração ROS 2 + OpenCV + cv_bridge
+    e publica o status do sistema no tópico /dog_ia/status.
+  </description>
+  <!-- TODO(grupo): trocar pelo nome e e-mail reais do responsável pelo pacote -->
+  <maintainer email="dogia.equipe@example.com">Equipe DOG-IA</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Dependências geradas pelo comando "ros2 pkg create" do guia (Etapa 2, Passo 2):
+       rclpy, sensor_msgs, cv_bridge e std_msgs -->
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>std_msgs</depend>
+
+  <!-- OpenCV e NumPy são bibliotecas do sistema (chaves do rosdep) -->
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
