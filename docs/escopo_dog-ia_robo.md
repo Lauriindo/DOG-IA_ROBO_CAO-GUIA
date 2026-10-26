@@ -183,12 +183,15 @@ Dias sem aula no semestre: 12/10 (feriado), 19/10 (TechWeek) e 02/11 (feriado). 
 
 ## 10.1 Estrutura do repositório
 
+O repositório é clonado dentro do workspace (`~/ros2_ws/src/DOG-IA_ROBO_CAO-GUIA`), conforme o guia do projeto (Aula 07), e cada pacote ROS 2 fica na raiz do repositório.
+
 ```
-DOG-IA_ROBO_CAO-GUIA/
+~/ros2_ws/src/DOG-IA_ROBO_CAO-GUIA/
 ├── README.md
 ├── docs/                 # escopo, relatório, diagramas, evidências
-├── scripts/              # utilitários (ex.: check_env.sh)
-└── ros2_ws/src/          # pacotes ROS 2 (dogia_description, dogia_bringup, dogia_navigation, dogia_vision, dogia_audio, dogia_mission)
+├── scripts/              # utilitários (check_env.sh, valida_etapa2.sh)
+├── dog_ia_core/          # pacote núcleo (Aula 07): nó valida_ambiente, tópico /dog_ia/status
+└── ...                   # próximos pacotes (dogia_description, dogia_bringup, dogia_navigation, dogia_vision, dogia_audio, dogia_mission)
 ```
 
 ## 11. Riscos e mitigação
